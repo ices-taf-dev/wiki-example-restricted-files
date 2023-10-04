@@ -5,10 +5,15 @@ library(icesTAFDB)
 # this test function (should) print out your ices username and some other info
 out <- icesTAFDB::test()
 
+# write this to a file
+cat(out, file = "silly_example.txt")
+
+
+
 if (FALSE) {
   # not yet developed, but to get RDBES intermediate files, it would
   # look like this:
-  rdbes_dk <-
+  rdbes_detail_dk <-
     icesTAFDB::getArtifacts(
       type = "RDBES_detail",
       ISO_3166 = "DK",
@@ -17,6 +22,3 @@ if (FALSE) {
       repository = "2023_all_RDBES_DK"
     )
 }
-
-# write this to a file
-cat(out, file = "silly_example.txt")
