@@ -1,0 +1,10 @@
+{
+  "file": "output/sag_upload.xml",
+  "type": "sag",
+  "metdata": [
+    {
+      "code_type": "ICES_StockCode",
+      "code": "san.sa.6"
+    }
+  ]
+}
