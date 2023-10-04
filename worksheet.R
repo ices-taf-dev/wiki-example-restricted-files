@@ -83,8 +83,10 @@ system("Rscript -e con=file('log_deps.txt');sink(con,append=TRUE);sink(con,type=
 system("Rscript -e icesTAF::clean.boot(force=TRUE);warnings()")
 
 # 1.3. run bootstrap script (connecting to ICES api's as the user who committed)
-system("Rscript -e icesConnect::set_username({username});icesConnect::ices_token(password = {skeleton_key_pass});con=file('log_bootstrap.txt');sink(con,append=TRUE);sink(con,type='message',append=TRUE);icesTAF::taf.bootstrap();warnings();sessioninfo::session_info();icesConnect::clear_token()")
-
+if (FALSE) {
+  # will not run here, just here for information
+  system("Rscript -e icesConnect::set_username({username});icesConnect::ices_token(password = {skeleton_key_pass});con=file('log_bootstrap.txt');sink(con,append=TRUE);sink(con,type='message',append=TRUE);icesTAF::taf.bootstrap();warnings();sessioninfo::session_info();icesConnect::clear_token()")
+}
 # 1.3. run bootstrap script (default user)
 system("Rscript -e con=file('log_bootstrap.txt');sink(con,append=TRUE);sink(con,type='message',append=TRUE);icesTAF::taf.bootstrap();warnings();sessioninfo::session_info()")
 
