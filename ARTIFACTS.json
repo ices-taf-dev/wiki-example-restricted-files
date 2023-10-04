@@ -1,10 +1,26 @@
-{
-  "file": "output/sag_upload.xml",
-  "type": "sag",
-  "metdata": [
-    {
-      "code_type": "ICES_StockCode",
-      "code": "san.sa.6"
-    }
-  ]
-}
+[
+  {
+    "file": "output/sag_upload.xml",
+    "type": "sag",
+    "metdata": [
+      {
+        "code_type": "ICES_StockCode",
+        "code": "san.sa.6"
+      }
+    ]
+  },
+  {
+    "file": "output/rdbes_detail_cod.27.46a7d20_dk.csv",
+    "type": "RDBES_detail",
+    "metdata": [
+      {
+        "code_type": "ICES_StockCode",
+        "code": "cod.27.46a7d20"
+      },
+      {
+        "code_type": "ISO_3166",
+        "code": "DK"
+      }
+    ]
+  }
+]
