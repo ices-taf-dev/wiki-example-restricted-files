@@ -3,7 +3,7 @@
 library(icesTAFDB)
 
 # this test function (should) print out your ices username and some other info
-out <- icesTAFDB::test()
+out <- capture.output(icesTAFDB::test())
 
 # write this to a file
 cat(out, file = "silly_example.txt")
